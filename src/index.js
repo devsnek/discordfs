@@ -3,7 +3,6 @@ const Router = require('./rest/Router');
 
 const f = new Fused();
 
-
 const mode = {
   owner: {
     read: true,
@@ -57,7 +56,7 @@ const genericHandler = (path) => ({
 
 f.add(/\/channels(\/\d{17,19}(\/messages(\/\d{17,19})?)?)?/, genericHandler);
 f.add(/\/guilds(\/\d{17,19}(\/members\/\d{17,19})?)?/, genericHandler);
-f.add(/\/users(\/\d{17,19})?/, genericHandler);
+f.add(/\/users\/(\d{17,19}|@me)/, genericHandler);
 
 f.mount('./discord')
   .then(() => console.log('Mounted!')); // eslint-disable-line no-console
