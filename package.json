@@ -1,0 +1,26 @@
+{
+  "name": "discordfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "fused": "github:devsnek/fused",
+    "promise_util": "^1.0.1",
+    "snekfetch": "^3.2.9",
+    "stat-mode": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsnek/discordfs.git"
+  },
+  "author": "snek <me@gus.host>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devsnek/discordfs/issues"
+  },
+  "homepage": "https://github.com/devsnek/discordfs#readme"
+}
